@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        width: 750px;
+        height: 450px;
+        background-color: white;
+      }
+      .container1 {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(252, 100%, 67%);
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        border-radius: 20px;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-around;
+        width: 350px;
+        margin-left: 25px;
+      }
+      .reaction {
+        background-color: hsl(0, 100%, 93%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .memory {
+        background-color: hwb(39 89% 0%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .verbal {
+        background-color: hsl(167, 66%, 93%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .visual {
+        background-color: hsl(234, 74%, 90%);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+      }
+      .button {
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 20px;
+        color: white;
+        padding: 5px 30px;
+        height: 45px;
+        width: 250px;
+        margin-left: 50px;
+        border: none;
+      }
+      .circle {
+        border-radius: 50%;
+        background-color: hsla(256, 72%, 46%, 1);
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(
+          to bottom right,
+          rgb(149, 121, 226),
+          hsla(241, 80%, 47%, 0)
+        );
+      }
+      .result {
+        margin-top: -50px;
+        color: white;
+        display: flex;
+
+        align-items: start;
+      }
+      .great {
+        color: white;
+        font-family: Hanken Grotesk;
+      }
+      .number {
+        margin-left: 170px;
+      }
+      .number1 {
+        margin-left: 185px;
+      }
+      .word {
+        margin-left: 10px;
+      }
+      h1 {
+        font-size: 60px;
+        color: white;
+        margin-top: 10px;
+        font-family: Hanken Grotesk;
+      }
+      .circle1 {
+        margin-top: -50px;
+        color: rgb(183, 172, 172);
+      }
+      .font {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <strong class="result">Your Result</strong>
+        <div class="circle">
+          <h1>76</h1>
+          <br />
+          <p class="circle1">of 100</p>
+        </div>
+        <h3 class="great">Great</h3>
+        <p class="font">
+          You scored higher than 65% of<br />
+          the people who have taken<br />
+          these tests.
+        </p>
+      </div>
+      <div class="container2">
+        <h3>Summary</h3>
+        <div class="reaction">
+          <img src="icon-reaction.svg" />
+          <strong class="word">Reaction</strong>
+          <strong class="number">80</strong> <span>/ 100</span>
+        </div>
+        <div class="memory">
+          <img src="icon-memory.svg" />
+          <strong class="word">Memory</strong>
+          <strong class="number">92 </strong><span>/ 100</span>
+        </div>
+        <div class="verbal">
+          <img src="icon-verbal.svg" />
+          <strong class="word">Verbal </strong>
+          <strong class="number1">61</strong><span>/ 100</span>
+        </div>
+        <div class="visual">
+          <img src="icon-visual.svg" />
+          <strong class="word">Visual</strong>
+          <strong class="number1">72</strong><span>/ 100</span>
+        </div>
+        <button class="button">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
+</body>
+</html>
